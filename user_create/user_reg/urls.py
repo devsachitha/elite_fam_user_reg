@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
+from .views import JoinRequestView
 
 urlpatterns = [
-    path('', views.user_reg),
+    path('', JoinRequestView.as_view( )),
 ]
