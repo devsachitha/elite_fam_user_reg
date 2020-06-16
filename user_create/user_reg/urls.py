@@ -1,7 +1,11 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
-from .views import JoinRequestView
+from rest_framework import routers
+from .views import JoinRequestViewSet
+
+router = routers.DefaultRouter()
+router.register('join_request', JoinRequestViewSet)
 
 urlpatterns = [
-    path('', JoinRequestView.as_view( )),
+    path('', include(router.urls)),
 ]

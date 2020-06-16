@@ -41,3 +41,6 @@ class JoinRequest(models.Model):
     applied_date = models.DateField(auto_now=True)
     status = models.CharField(null=False, default='pending', choices=STATUS, max_length=20)
     is_published = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.first_name
