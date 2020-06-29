@@ -32,7 +32,7 @@ class JoinRequest(models.Model):
     email = models.EmailField(null=False, default=None)
     address_line_one = models.CharField(null=False,max_length=100, default=None)
     address_line_two = models.CharField(null=False,max_length=100, default=None)
-    city = models.CharField(null=False,max_length=150,default=None)
+    city = models.CharField(null=False, max_length=150,default=None)
     province = models.CharField(null=False,choices=PROVINCES, max_length=50, default=None)
 
     vehicle_reg = models.CharField(null=False, max_length=20,default=None)

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import JoinRequest
+from ..models.join_request import JoinRequest
 
 
 class JoinRequestSerializer(serializers.ModelSerializer):
