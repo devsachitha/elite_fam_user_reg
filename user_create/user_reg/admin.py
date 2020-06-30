@@ -2,6 +2,8 @@ from django.contrib import admin
 from .models.join_request import JoinRequest
 from .models.vehicle import VehicleBrand
 from .models.vehicle import VehicleModel
+from .models.service_records import ServiceRecords
+from .models.service_records import ServiceRecordLines
 
 
 # Register your models here.
@@ -14,4 +16,7 @@ class JoinrequestAdmin(admin.ModelAdmin):
 
 admin.site.register(VehicleBrand)
 admin.site.register(VehicleModel)
+admin.site.register(ServiceRecords)
+admin.site.register(ServiceRecordLines)
+
 
